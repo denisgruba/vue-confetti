@@ -59,7 +59,11 @@ class Confetti {
         idx: 0,
         step: 10,
         get color () {
-          return this.opts[((this.idx++) / this.step | 0) % this.opts.length]
+          return this.opts[(
+            (
+              this.idx++
+            ) / this.step | 0
+          ) % this.opts.length]
         }
       }
     })
